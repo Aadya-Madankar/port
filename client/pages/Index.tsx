@@ -28,7 +28,9 @@ export default function Index() {
             </p>
             <div className="relative">
               <div className="size-28 rounded-full border border-black grid place-items-center">
-                <span className="text-[10px] uppercase tracking-widest">Available</span>
+                <span className="text-[10px] uppercase tracking-widest">
+                  Available
+                </span>
               </div>
             </div>
           </div>
@@ -72,11 +74,13 @@ export default function Index() {
       <section id="about" className="container py-20">
         <div className="grid md:grid-cols-3 gap-10 items-start">
           <div className="md:col-span-2">
-            <h3 className="text-2xl md:text-3xl font-semibold tracking-tight mb-6">About</h3>
+            <h3 className="text-2xl md:text-3xl font-semibold tracking-tight mb-6">
+              About
+            </h3>
             <p className="text-lg leading-relaxed opacity-90">
               I design and build clean, contemporary interfaces with a focus on
-              performance and emotion. My process blends strategy, aesthetics and
-              code to create distinctive brands and delightful product
+              performance and emotion. My process blends strategy, aesthetics
+              and code to create distinctive brands and delightful product
               experiences.
             </p>
             <div className="mt-6 flex flex-wrap gap-3 text-sm">
@@ -111,8 +115,15 @@ export default function Index() {
       {/* Work */}
       <section id="work" className="container py-20">
         <div className="flex items-end justify-between mb-8">
-          <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">Selected projects</h2>
-          <a href="#contact" className="text-sm underline underline-offset-4 hover:no-underline">Get in touch</a>
+          <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">
+            Selected projects
+          </h2>
+          <a
+            href="#contact"
+            className="text-sm underline underline-offset-4 hover:no-underline"
+          >
+            Get in touch
+          </a>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <ProjectCard
@@ -150,7 +161,9 @@ export default function Index() {
               <h3 className="text-2xl md:text-4xl font-semibold tracking-tight">
                 Let’s create something great
               </h3>
-              <p className="mt-3 opacity-80">Based in India · Working worldwide</p>
+              <p className="mt-3 opacity-80">
+                Based in India · Working worldwide
+              </p>
             </div>
             <a
               href="mailto:hello@aadya.dev"
@@ -182,14 +195,20 @@ function ProjectCard({
       href="#contact"
     >
       <div className="absolute inset-0">
-        <img src={image} alt="" className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
+        <img
+          src={image}
+          alt=""
+          className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+        />
         <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors" />
       </div>
       <div className="relative z-10 flex h-72 flex-col justify-between p-6 md:h-[28rem]">
         <div />
         <div className="flex items-end justify-between">
           <div>
-            <h4 className="text-xl md:text-2xl font-semibold tracking-tight">{title}</h4>
+            <h4 className="text-xl md:text-2xl font-semibold tracking-tight">
+              {title}
+            </h4>
             <p className="opacity-80 text-sm md:text-base">{subtitle}</p>
           </div>
           <span className="text-sm opacity-60">{year}</span>

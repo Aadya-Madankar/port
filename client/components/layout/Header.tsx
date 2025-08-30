@@ -15,7 +15,9 @@ export default function Header() {
     <header
       className={cn(
         "fixed top-0 inset-x-0 z-50 transition-all",
-        scrolled ? "backdrop-blur border-b border-black/10 bg-white/70" : "bg-transparent"
+        scrolled
+          ? "backdrop-blur border-b border-black/10 bg-white/70"
+          : "bg-transparent",
       )}
     >
       <div className="container flex items-center justify-between py-4">
@@ -23,9 +25,15 @@ export default function Header() {
           Aadya Madankar
         </a>
         <nav className="hidden md:flex items-center gap-8 text-sm">
-          <a href="#work" className="hover:opacity-70 transition-opacity">Work</a>
-          <a href="#about" className="hover:opacity-70 transition-opacity">About</a>
-          <a href="#contact" className="hover:opacity-70 transition-opacity">Contact</a>
+          <a href="#work" className="hover:opacity-70 transition-opacity">
+            Work
+          </a>
+          <a href="#about" className="hover:opacity-70 transition-opacity">
+            About
+          </a>
+          <a href="#contact" className="hover:opacity-70 transition-opacity">
+            Contact
+          </a>
         </nav>
         <a
           href="#contact"
