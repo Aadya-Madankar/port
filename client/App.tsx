@@ -1,7 +1,7 @@
 import "./global.css";
 
 import { Toaster } from "@/components/ui/toaster";
-import { createRoot } from "react-dom/client";
+import { createRoot, type Root } from "react-dom/client";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
@@ -30,4 +30,15 @@ const App = () => (
   </QueryClientProvider>
 );
 
-createRoot(document.getElementById("root")!).render(<App />);
+const container = document.getElementById("root")!;
+// Reuse root across HMR to avoid double createRoot warning
+// @ts-expect-error - augmenting window for storing the root instance
+const existingRoot: Root | undefined = (window as any).__APP_ROOT__;
+if (existingRoot) {
+  existingRoot.render(<App />);
+} else {
+  const root = createRoot(container);
+  root.render(<App />);
+  // @ts-expect-error - augmenting window for storing the root instance
+  (window as any).__APP_ROOT__ = root;
+}
