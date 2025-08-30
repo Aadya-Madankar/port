@@ -68,40 +68,6 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Work */}
-      <section id="work" className="container py-20">
-        <div className="flex items-end justify-between mb-8">
-          <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">Selected projects</h2>
-          <a href="#contact" className="text-sm underline underline-offset-4 hover:no-underline">Get in touch</a>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <ProjectCard
-            title="Aurora Studio"
-            subtitle="Identity & Website"
-            year="2024"
-            image="/images/project-1.svg"
-          />
-          <ProjectCard
-            title="Nimbus UI"
-            subtitle="Design System"
-            year="2023"
-            image="/images/project-2.svg"
-          />
-          <ProjectCard
-            title="Echo Journal"
-            subtitle="Editorial Platform"
-            year="2023"
-            image="/images/project-3.svg"
-          />
-          <ProjectCard
-            title="Orbit Lab"
-            subtitle="Creative Dev"
-            year="2022"
-            image="/images/project-4.svg"
-          />
-        </div>
-      </section>
-
       {/* About */}
       <section id="about" className="container py-20">
         <div className="grid md:grid-cols-3 gap-10 items-start">
@@ -139,6 +105,40 @@ export default function Index() {
               className="h-full w-full object-cover"
             />
           </div>
+        </div>
+      </section>
+
+      {/* Work */}
+      <section id="work" className="container py-20">
+        <div className="flex items-end justify-between mb-8">
+          <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">Selected projects</h2>
+          <a href="#contact" className="text-sm underline underline-offset-4 hover:no-underline">Get in touch</a>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <ProjectCard
+            title="Aurora Studio"
+            subtitle="Identity & Website"
+            year="2024"
+            image="/images/project-1.svg"
+          />
+          <ProjectCard
+            title="Nimbus UI"
+            subtitle="Design System"
+            year="2023"
+            image="/images/project-2.svg"
+          />
+          <ProjectCard
+            title="Echo Journal"
+            subtitle="Editorial Platform"
+            year="2023"
+            image="/images/project-3.svg"
+          />
+          <ProjectCard
+            title="Orbit Lab"
+            subtitle="Creative Dev"
+            year="2022"
+            image="/images/project-4.svg"
+          />
         </div>
       </section>
 
