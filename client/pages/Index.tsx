@@ -17,26 +17,26 @@ export default function Index() {
       {/* Hero */}
       <section className="container pb-20 pt-8 md:pt-16 reveal">
         <div className="flex items-start justify-between gap-6">
-          <div className="max-w-2xl">
-            <h1 className="text-[14vw] leading-[0.9] md:text-[8rem] font-semibold tracking-tight select-none">
+          <motion.div className="max-w-2xl" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, ease: "easeOut" }}>
+            <motion.h1 className="text-[14vw] leading-[0.9] md:text-[8rem] font-semibold tracking-tight select-none" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.05, duration: 0.8, ease: "easeOut" }}>
               Aadya
               <br />
               Madankar
-            </h1>
-          </div>
-          <div className="hidden md:flex flex-col items-end gap-6 pt-4">
+            </motion.h1>
+          </motion.div>
+          <motion.div className="hidden md:flex flex-col items-end gap-6 pt-4" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, ease: "easeOut", delay: 0.15 }}>
             <p className="max-w-sm text-sm leading-relaxed opacity-80">
               AI engineer and GenAI developer building agentic systems, RAG
               pipelines, and developer experience for high‑impact products.
             </p>
             <div className="relative">
-              <div className="size-28 rounded-full border border-border grid place-items-center">
+              <motion.div className="size-28 rounded-full border border-border grid place-items-center" initial={{ scale: 0.98 }} animate={{ scale: 1 }} transition={{ duration: 0.6, ease: "easeOut" }} whileHover={{ scale: 1.05 }}>
                 <span className="text-[10px] uppercase tracking-widest">
                   Available
                 </span>
-              </div>
+              </motion.div>
             </div>
-          </div>
+          </motion.div>
         </div>
 
         {/* Marquee */}
@@ -78,7 +78,7 @@ export default function Index() {
       {/* About */}
       <section id="about" className="container py-20 reveal">
         <div className="grid md:grid-cols-3 gap-10 items-start">
-          <div className="md:col-span-2">
+          <motion.div className="md:col-span-2" initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.4 }} transition={{ duration: 0.6, ease: "easeOut" }}>
             <h3 className="text-2xl md:text-3xl font-semibold tracking-tight mb-6">
               About
             </h3>
@@ -109,14 +109,14 @@ export default function Index() {
                 </span>
               ))}
             </div>
-          </div>
-          <div className="aspect-[4/5] rounded-2xl overflow-hidden border border-border">
+          </motion.div>
+          <motion.div className="aspect-[4/5] rounded-2xl overflow-hidden border border-border" initial={{ opacity: 0, scale: 0.98 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}>
             <img
               alt="Portrait"
-              src="/images/portrait.svg"
+              src="https://cdn.builder.io/api/v1/image/assets%2F9674347e407d47f0bb2125b1c6e66204%2F73b8e9fe8c5e411abbc29af03738f6c0?format=webp&width=800"
               className="h-full w-full object-cover"
             />
-          </div>
+          </motion.div>
         </div>
       </section>
 
@@ -198,9 +198,14 @@ function ProjectCard({
   image: string;
 }) {
   return (
-    <a
+    <motion.a
       className="group relative overflow-hidden rounded-2xl border border-border"
       href="#contact"
+      initial={{ opacity: 0, y: 24 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+      whileHover={{ scale: 1.01 }}
     >
       <div className="absolute inset-0">
         <img
@@ -222,6 +227,6 @@ function ProjectCard({
           <span className="text-sm opacity-60">{year}</span>
         </div>
       </div>
-    </a>
+    </motion.a>
   );
 }
