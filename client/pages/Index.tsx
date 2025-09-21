@@ -75,6 +75,33 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Featured */}
+      <section id="ai-associate" className="container py-16 md:py-20 reveal">
+        <div className="flex flex-col md:flex-row items-start gap-8 md:gap-12">
+          <motion.div className="md:w-2/5" initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, ease: "easeOut" }}>
+            <p className="text-xs uppercase tracking-[0.25em] opacity-60 mb-2">Featured</p>
+            <h2 className="text-3xl md:text-4xl font-semibold tracking-tight">AI Associate</h2>
+            <p className="mt-4 opacity-80">
+              Agentic developer assistant with RAG, tool use and orchestration.
+              Explore the live demo and source code below.
+            </p>
+            <div className="mt-6 flex flex-wrap gap-3 text-sm">
+              {['Agents','RAG','Tool Use','Evaluation','Web UI'].map(t => (
+                <span key={t} className="rounded-full border border-border px-3 py-1">{t}</span>
+              ))}
+            </div>
+            <div className="mt-6 flex gap-3">
+              <a href="https://ai-associate-2025.vercel.app/" target="_blank" rel="noreferrer" className="inline-flex items-center rounded-full bg-primary text-primary-foreground px-5 py-2.5 text-sm">Live Demo</a>
+              <a href="https://github.com/Aadya-Madankar/AI-Associate-2025" target="_blank" rel="noreferrer" className="inline-flex items-center rounded-full border border-border px-5 py-2.5 text-sm hover:bg-primary hover:text-primary-foreground">GitHub</a>
+            </div>
+          </motion.div>
+          <motion.a href="https://ai-associate-2025.vercel.app/" target="_blank" rel="noreferrer" className="group md:w-3/5 relative overflow-hidden rounded-2xl border border-border" initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, ease: 'easeOut' }}>
+            <img alt="AI Associate preview" src="https://opengraph.githubassets.com/1/Aadya-Madankar/AI-Associate-2025" className="w-full h-auto object-cover" />
+            <div className="absolute inset-0 bg-transparent group-hover:bg-foreground/10 transition-colors" />
+          </motion.a>
+        </div>
+      </section>
+
       {/* About */}
       <section id="about" className="container py-20 reveal">
         <div className="grid md:grid-cols-3 gap-10 items-start">
