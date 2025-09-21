@@ -16,7 +16,7 @@ export default function Header() {
       className={cn(
         "fixed top-0 inset-x-0 z-50 transition-all",
         scrolled
-          ? "backdrop-blur border-b border-black/10 bg-white/70"
+          ? "backdrop-blur border-b border-border bg-white/70 dark:bg-black/30"
           : "bg-transparent",
       )}
     >
@@ -37,7 +37,7 @@ export default function Header() {
         </nav>
         <a
           href="#contact"
-          className="ml-6 inline-flex items-center rounded-full border border-black px-4 py-2 text-sm hover:bg-black hover:text-white transition-colors"
+          className="ml-6 inline-flex items-center rounded-full border border-border px-4 py-2 text-sm hover:bg-primary hover:text-primary-foreground transition-colors"
         >
           Available for projects
         </a>
