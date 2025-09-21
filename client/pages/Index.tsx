@@ -152,15 +152,29 @@ export default function Index() {
             title="Multi‑Modal Screen Assistant"
             subtitle="See screen, hear voice, act"
             year="2024"
-            image="https://aadya-madankar.github.io/Portfolio/assets/projectttt.jpg"
-            link="https://github.com/Aadya1603/Multi-Modal-Screen-to-Voice-Assistant"
+            image="https://opengraph.githubassets.com/1/Aadya-Madankar/Multi-Modal-Screen-Assistant"
+            link="https://github.com/Aadya-Madankar/Multi-Modal-Screen-Assistant"
           />
           <ProjectCard
-            title="Ollama × Streamlit UI"
-            subtitle="Interactive UI for Ollama"
-            year="2023"
-            image="https://aadya-madankar.github.io/Portfolio/assets/ollama.png"
-            link="https://github.com/Aadya1603/Ollama_UI"
+            title="RAGify"
+            subtitle="Advanced Retrieval‑Augmented Generation"
+            year="2024"
+            image="https://opengraph.githubassets.com/1/Aadya-Madankar/RAGify"
+            link="https://github.com/Aadya-Madankar/RAGify"
+          />
+          <ProjectCard
+            title="Machine‑Learning‑Projects"
+            subtitle="Assorted ML experiments"
+            year="2024"
+            image="https://opengraph.githubassets.com/1/Aadya-Madankar/Machine-Learning-Projects"
+            link="https://github.com/Aadya-Madankar/Machine-Learning-Projects"
+          />
+          <ProjectCard
+            title="Portfolio (code)"
+            subtitle="Source for earlier site"
+            year="2024"
+            image="https://opengraph.githubassets.com/1/Aadya-Madankar/Portfolio"
+            link="https://github.com/Aadya-Madankar/Portfolio"
           />
         </div>
       </section>
