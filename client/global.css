@@ -71,3 +71,8 @@ code { font-family: 'Geist Mono', source-code-pro, Menlo, Monaco, Consolas, 'Cou
 }
 
 @layer base { * { @apply border-border; } body { @apply bg-background text-foreground; } }
+
+/* Animated section divider */
+.section-divider{height:2px;width:100%;background-image:repeating-linear-gradient(90deg,hsl(var(--border)) 0 24px,transparent 24px 48px);background-size:200% 100%;animation:divider-move 18s linear infinite;opacity:.6}
+.dark .section-divider{opacity:.35}
+@keyframes divider-move{from{background-position:0 0}to{background-position:-200% 0}}
