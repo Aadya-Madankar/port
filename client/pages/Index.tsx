@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import useRevealOnScroll from "@/hooks/use-reveal";
 
 export default function Index() {
   useEffect(() => {
@@ -8,11 +9,12 @@ export default function Index() {
       el?.scrollIntoView({ behavior: "smooth" });
     }
   }, []);
+  useRevealOnScroll();
 
   return (
     <div>
       {/* Hero */}
-      <section className="container pb-20 pt-8 md:pt-16">
+      <section className="container pb-20 pt-8 md:pt-16 reveal">
         <div className="flex items-start justify-between gap-6">
           <div className="max-w-2xl">
             <h1 className="text-[14vw] leading-[0.9] md:text-[8rem] font-semibold tracking-tight select-none">
@@ -71,7 +73,7 @@ export default function Index() {
       </section>
 
       {/* About */}
-      <section id="about" className="container py-20">
+      <section id="about" className="container py-20 reveal">
         <div className="grid md:grid-cols-3 gap-10 items-start">
           <div className="md:col-span-2">
             <h3 className="text-2xl md:text-3xl font-semibold tracking-tight mb-6">
@@ -113,7 +115,7 @@ export default function Index() {
       </section>
 
       {/* Work */}
-      <section id="work" className="container py-20">
+      <section id="work" className="container py-20 reveal">
         <div className="flex items-end justify-between mb-8">
           <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">
             Selected projects
@@ -154,7 +156,7 @@ export default function Index() {
       </section>
 
       {/* Contact */}
-      <section id="contact" className="container py-20">
+      <section id="contact" className="container py-20 reveal">
         <div className="border border-black rounded-2xl p-10 md:p-14 bg-[radial-gradient(ellipse_at_top,_rgba(0,0,0,0.04),_transparent)]">
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
             <div>
