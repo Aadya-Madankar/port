@@ -2,7 +2,9 @@ import { useEffect } from "react";
 
 export default function useRevealOnScroll() {
   useEffect(() => {
-    const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const prefersReduced = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
     if (prefersReduced) return;
 
     const els = Array.from(document.querySelectorAll<HTMLElement>(".reveal"));
