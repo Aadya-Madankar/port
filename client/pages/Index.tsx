@@ -25,8 +25,8 @@ export default function Index() {
           </div>
           <div className="hidden md:flex flex-col items-end gap-6 pt-4">
             <p className="max-w-sm text-sm leading-relaxed opacity-80">
-              Designer and creative developer crafting expressive digital
-              experiences for brands, products and people.
+              AI engineer and GenAI developer building agentic systems, RAG
+              pipelines, and developer experience for high‑impact products.
             </p>
             <div className="relative">
               <div className="size-28 rounded-full border border-border grid place-items-center">
@@ -41,33 +41,35 @@ export default function Index() {
         {/* Marquee */}
         <div className="mt-10 overflow-hidden border-y border-border py-3">
           <div className="flex whitespace-nowrap animate-marquee gap-10 text-sm uppercase tracking-[0.2em]">
-            <span>Branding</span>
+            <span>RAG</span>
             <span>—</span>
-            <span>Web Design</span>
+            <span>Agents</span>
             <span>—</span>
-            <span>Creative Development</span>
+            <span>LLMOps</span>
             <span>—</span>
-            <span>Interaction</span>
+            <span>Tool Use</span>
             <span>—</span>
-            <span>Art Direction</span>
+            <span>Vector Search</span>
             <span>—</span>
-            <span>Motion</span>
+            <span>Evaluation</span>
             <span>—</span>
-            <span>Prototyping</span>
+            <span>Observability</span>
             <span>—</span>
-            <span>Branding</span>
+            <span>Streaming</span>
             <span>—</span>
-            <span>Web Design</span>
+            <span>RAG</span>
             <span>—</span>
-            <span>Creative Development</span>
+            <span>Agents</span>
             <span>—</span>
-            <span>Interaction</span>
+            <span>LLMOps</span>
             <span>—</span>
-            <span>Art Direction</span>
+            <span>Tool Use</span>
             <span>—</span>
-            <span>Motion</span>
+            <span>Vector Search</span>
             <span>—</span>
-            <span>Prototyping</span>
+            <span>Evaluation</span>
+            <span>—</span>
+            <span>Observability</span>
           </div>
         </div>
       </section>
@@ -80,20 +82,23 @@ export default function Index() {
               About
             </h3>
             <p className="text-lg leading-relaxed opacity-90">
-              I design and build clean, contemporary interfaces with a focus on
-              performance and emotion. My process blends strategy, aesthetics
-              and code to create distinctive brands and delightful product
-              experiences.
+              I design and build GenAI systems: retrieval‑augmented generation,
+              multi‑agent orchestration, and production‑ready APIs with strong
+              evaluation and observability. Pragmatic about latency, cost, and
+              reliability.
             </p>
             <div className="mt-6 flex flex-wrap gap-3 text-sm">
               {[
-                "Figma",
-                "Framer",
-                "React",
-                "Three.js",
+                "Python",
                 "TypeScript",
-                "WebGL",
-                "GSAP",
+                "FastAPI",
+                "React",
+                "LangChain",
+                "LlamaIndex",
+                "vLLM",
+                "OpenAI",
+                "Anthropic",
+                "Pinecone",
               ].map((t) => (
                 <span
                   key={t}
@@ -129,26 +134,26 @@ export default function Index() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <ProjectCard
-            title="Aurora Studio"
-            subtitle="Identity & Website"
+            title="RAG Platform"
+            subtitle="Vector‑backed Retrieval"
             year="2024"
             image="/images/project-1.svg"
           />
           <ProjectCard
-            title="Nimbus UI"
-            subtitle="Design System"
+            title="Agent Orchestrator"
+            subtitle="Multi‑tool Agents"
             year="2023"
             image="/images/project-2.svg"
           />
           <ProjectCard
-            title="Echo Journal"
-            subtitle="Editorial Platform"
+            title="Code Copilot"
+            subtitle="Developer UX"
             year="2023"
             image="/images/project-3.svg"
           />
           <ProjectCard
-            title="Orbit Lab"
-            subtitle="Creative Dev"
+            title="Real‑time Analytics"
+            subtitle="Streaming & Dashboards"
             year="2022"
             image="/images/project-4.svg"
           />
@@ -161,10 +166,10 @@ export default function Index() {
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
             <div>
               <h3 className="text-2xl md:text-4xl font-semibold tracking-tight">
-                Let’s create something great
+                Let’s ship your GenAI product
               </h3>
               <p className="mt-3 opacity-80">
-                Based in India · Working worldwide
+                Available worldwide · Remote friendly
               </p>
             </div>
             <a
