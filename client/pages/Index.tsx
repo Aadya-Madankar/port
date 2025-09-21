@@ -29,7 +29,7 @@ export default function Index() {
               experiences for brands, products and people.
             </p>
             <div className="relative">
-              <div className="size-28 rounded-full border border-black grid place-items-center">
+              <div className="size-28 rounded-full border border-border grid place-items-center">
                 <span className="text-[10px] uppercase tracking-widest">
                   Available
                 </span>
@@ -39,7 +39,7 @@ export default function Index() {
         </div>
 
         {/* Marquee */}
-        <div className="mt-10 overflow-hidden border-y border-black/10 py-3">
+        <div className="mt-10 overflow-hidden border-y border-border py-3">
           <div className="flex whitespace-nowrap animate-marquee gap-10 text-sm uppercase tracking-[0.2em]">
             <span>Branding</span>
             <span>—</span>
@@ -104,7 +104,7 @@ export default function Index() {
               ))}
             </div>
           </div>
-          <div className="aspect-[4/5] rounded-2xl overflow-hidden border border-black/10">
+          <div className="aspect-[4/5] rounded-2xl overflow-hidden border border-border">
             <img
               alt="Portrait"
               src="/images/portrait.svg"
@@ -157,7 +157,7 @@ export default function Index() {
 
       {/* Contact */}
       <section id="contact" className="container py-20 reveal">
-        <div className="border border-black rounded-2xl p-10 md:p-14 bg-[radial-gradient(ellipse_at_top,_rgba(0,0,0,0.04),_transparent)]">
+        <div className="border border-border rounded-2xl p-10 md:p-14 bg-[radial-gradient(ellipse_at_top,_rgba(0,0,0,0.06),_transparent)] dark:bg-[radial-gradient(ellipse_at_top,_rgba(255,255,255,0.06),_transparent)]">
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
             <div>
               <h3 className="text-2xl md:text-4xl font-semibold tracking-tight">
@@ -169,7 +169,7 @@ export default function Index() {
             </div>
             <a
               href="mailto:hello@aadya.dev"
-              className="inline-flex items-center rounded-full bg-black text-white px-6 py-3 hover:opacity-90"
+              className="inline-flex items-center rounded-full bg-primary text-primary-foreground px-6 py-3 hover:opacity-90"
             >
               hello@aadya.dev
             </a>
@@ -193,7 +193,7 @@ function ProjectCard({
 }) {
   return (
     <a
-      className="group relative overflow-hidden rounded-2xl border border-black/10"
+      className="group relative overflow-hidden rounded-2xl border border-border"
       href="#contact"
     >
       <div className="absolute inset-0">
@@ -202,7 +202,7 @@ function ProjectCard({
           alt=""
           className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
         />
-        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors" />
+        <div className="absolute inset-0 bg-transparent group-hover:bg-foreground/10 transition-colors" />
       </div>
       <div className="relative z-10 flex h-72 flex-col justify-between p-6 md:h-[28rem]">
         <div />
