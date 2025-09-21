@@ -135,28 +135,32 @@ export default function Index() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <ProjectCard
-            title="RAG Platform"
-            subtitle="Vector‑backed Retrieval"
+            title="Giving Abilities to AI"
+            subtitle="Vision, ASR and TTS with Gemini"
+            year="Live"
+            image="https://aadya-madankar.github.io/Portfolio/assets/projectt.png"
+            link="https://jarvis-sand.vercel.app/"
+          />
+          <ProjectCard
+            title="Colab‑Devin"
+            subtitle="Run Open‑Devin in Google Colab"
             year="2024"
-            image="/images/project-1.svg"
+            image="https://aadya-madankar.github.io/Portfolio/assets/project.png"
+            link="https://colab.research.google.com/drive/1HuOz-QIo0Vj2C7dJYaKHNS1HbLUa50No?usp=sharing"
           />
           <ProjectCard
-            title="Agent Orchestrator"
-            subtitle="Multi‑tool Agents"
+            title="Multi‑Modal Screen Assistant"
+            subtitle="See screen, hear voice, act"
+            year="2024"
+            image="https://aadya-madankar.github.io/Portfolio/assets/projectttt.jpg"
+            link="https://github.com/Aadya1603/Multi-Modal-Screen-to-Voice-Assistant"
+          />
+          <ProjectCard
+            title="Ollama × Streamlit UI"
+            subtitle="Interactive UI for Ollama"
             year="2023"
-            image="/images/project-2.svg"
-          />
-          <ProjectCard
-            title="Code Copilot"
-            subtitle="Developer UX"
-            year="2023"
-            image="/images/project-3.svg"
-          />
-          <ProjectCard
-            title="Real‑time Analytics"
-            subtitle="Streaming & Dashboards"
-            year="2022"
-            image="/images/project-4.svg"
+            image="https://aadya-madankar.github.io/Portfolio/assets/ollama.png"
+            link="https://github.com/Aadya1603/Ollama_UI"
           />
         </div>
       </section>
@@ -191,16 +195,20 @@ function ProjectCard({
   subtitle,
   year,
   image,
+  link,
 }: {
   title: string;
   subtitle: string;
   year: string;
   image: string;
+  link?: string;
 }) {
   return (
     <motion.a
       className="group relative overflow-hidden rounded-2xl border border-border"
-      href="#contact"
+      href={link ?? "#contact"}
+      target={link ? "_blank" : undefined}
+      rel={link ? "noreferrer" : undefined}
       initial={{ opacity: 0, y: 24 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.3 }}
