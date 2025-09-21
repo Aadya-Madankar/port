@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import useRevealOnScroll from "@/hooks/use-reveal";
+import { motion } from "framer-motion";
 
 export default function Index() {
   useEffect(() => {
